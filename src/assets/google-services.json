@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "757462196248",
+    "project_id": "teste-59f4e",
+    "storage_bucket": "teste-59f4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757462196248:android:4e355d8b8b998c819ba36d",
+        "android_client_info": {
+          "package_name": "com.campotv.tochegando"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757462196248-49mgcvus9ttoqmt3u0fh2fsdr8kkgvqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYKOhqnVfCUH83ipsH87GoTIQiKz_xE28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757462196248-49mgcvus9ttoqmt3u0fh2fsdr8kkgvqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

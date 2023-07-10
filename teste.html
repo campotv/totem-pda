@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://192.168.100.25:8080/sga/totem/../layout/totem/impressao.css"
+    />
+  </head>
+  <body>
+    <div
+      id="impressao"
+      style="
+        margin: 0;
+        transform: scale(0.85);
+        margin-left: -17px;
+        margin-top: 10px;
+      "
+    >
+      <div id="header"><img src="http://192.168.100.25:8080/../../CONFIGURACOES/logo/cli/bw.png" /></div>
+      <div id="senha"><span>senha</span><br />N83</div>
+      <div id="footer">12:33<br />12/05/2023</div>
+      <div class="msg" id="div_qrcode" style="clear: both">
+        <hr />
+        Acompanhe em tempo real<br />o andamento da fila de espera:<br /><canvas
+          id="canvas"
+          name="https://filaonline.cwbox.net.br/filaonline_luis?senha=N83"
+          style="clear: both"
+        ></canvas>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="http://192.168.100.25:8080/sga/data/scripts/qrcode/qrcode.js"
+    ></script>
+    <script>
+      document.getElementById("div_qrcode").style.display = "none";
+      QRCode.toCanvas(
+        document.getElementById("canvas"),
+        "https://filaonline.cwbox.net.br/filaonline_luis?senha=N20",
+        function (error) {
+          if (error) {
+            console.log(error);
+          } else {
+            document.getElementById("div_qrcode").style.display = "";
+            console.log("success!");
+          }
+        }
+      );
+    </script>
+  </body>
+</html>
